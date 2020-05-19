@@ -119,7 +119,7 @@ The optimal hedged algorithm can be interpreted as the following optimal problem
 It means we should try to minimize the realized volatility of hedged portfolio while maintaining the expected value of portfolio unchanged.
 
 ### 3.3 Basis Functions
-The original optimization is very difficult to solve. Thus we assume a set of basis function and solved it in such subspace. We use $$N_C$$ and $$N_H$$ to denote the number of basis functions for price and hedge.
+The original optimization is very difficult to solve. Thus we assume a set of basis function and solved it in such subspace. We use <img src="https://tex.s2cms.ru/svg/N_C" alt="N_C" /> and <img src="https://tex.s2cms.ru/svg/N_H" alt="N_H" /> to denote the number of basis functions for price and hedge.
 
 <img src="https://tex.s2cms.ru/svg/%0A%5Cbegin%7Balign%7D%0A%5Cbegin%7Bsplit%7D%0AC_k(%5Ccdot)%20%26%3D%20%5Csum_%7Bi%3D0%7D%5E%7BN_C%7D%20a_%7Bk%2Ci%7D%20A_i(%5Ccdot)%5C%5C%0AH_k(%5Ccdot)%20%26%3D%20%5Csum_%7Bi%3D0%7D%5E%7BN_H%7D%20b_%7Bk%2Ci%7D%20B_i(%5Ccdot)%0A%5Cend%7Bsplit%7D%5Cnonumber%0A%5Cend%7Balign%7D%0A" alt="
 \begin{align}
