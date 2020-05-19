@@ -8,26 +8,29 @@ Tree methods equations are derived by moment matching for mean and variance. Not
 
 * Additive tree (<img src="https://tex.s2cms.ru/svg/log%20S_t" alt="log S_t" />)
 
-  * Trigeogis tree: <img src="https://tex.s2cms.ru/svg/%5CDelta%20x_u%20%3D%20%5CDelta%20x_d" alt="\Delta x_u = \Delta x_d" />
-    <img src="https://tex.s2cms.ru/svg/%0A%20%20%20%20p_u%20%5CDelta%20x%20-%20p_d%20%5CDelta%20x%20%3D%20%5Cmu%20%5CDelta%20t%5C%5C%0A%20%20%20%20p_u%20%5CDelta%20x%5E2%20%2B%20p_d%20%5CDelta%20x%20%5E2%20-%20(%5Cmu%20%5CDelta%20t)%5E2%20%3D%20%5Csigma%5E2%20%5CDelta%20t%5C%5C%0A%20%20%20%20p_u%20%2B%20p_d%20%3D%201%5C%5C%0A%20%20%20%20%5Cmu%20%3D%20r-%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%0A%20%20%20%20" alt="
+* Trigeogis tree: <img src="https://tex.s2cms.ru/svg/%5CDelta%20x_u%20%3D%20%5CDelta%20x_d" alt="\Delta x_u = \Delta x_d" />
+
+<img src="https://tex.s2cms.ru/svg/%0A%20%20%20%20p_u%20%5CDelta%20x%20-%20p_d%20%5CDelta%20x%20%3D%20%5Cmu%20%5CDelta%20t%5C%5C%0A%20%20%20%20p_u%20%5CDelta%20x%5E2%20%2B%20p_d%20%5CDelta%20x%20%5E2%20-%20(%5Cmu%20%5CDelta%20t)%5E2%20%3D%20%5Csigma%5E2%20%5CDelta%20t%5C%5C%0A%20%20%20%20p_u%20%2B%20p_d%20%3D%201%5C%5C%0A%20%20%20%20%5Cmu%20%3D%20r-%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%0A" alt="
     p_u \Delta x - p_d \Delta x = \mu \Delta t\\
     p_u \Delta x^2 + p_d \Delta x ^2 - (\mu \Delta t)^2 = \sigma^2 \Delta t\\
     p_u + p_d = 1\\
     \mu = r-\frac{\sigma^2}{2}
-    " />
+" />
 
-  * Jarrow Rudd tree: <img src="https://tex.s2cms.ru/svg/p_u%20%3D%20p_d" alt="p_u = p_d" />
+* Jarrow Rudd tree: <img src="https://tex.s2cms.ru/svg/p_u%20%3D%20p_d" alt="p_u = p_d" />
 
 * Multiplicative tree (<img src="https://tex.s2cms.ru/svg/S_t" alt="S_t" />)
 
-  * Cox-Ross-Rubinstein (CRR) tree:  similar to Trigeogis tree, but different in the first moment  and involves approximation. <img src="https://tex.s2cms.ru/svg/u%20%3D%20e%5E%7B%5Csigma%20%5Csqrt%7B%5CDelta%20t%7D%7D" alt="u = e^{\sigma \sqrt{\Delta t}}" />
-    <img src="https://tex.s2cms.ru/svg/%0A%20%20%20%20p_u%20u%20%2B%20p_d%20d%20%3D%20e%5E%7Br%20%5CDelta%20t%7D%5C%5C%0A%20%20%20%20p_u%20%5CDelta%20x%5E2%20%2B%20p_d%20%5CDelta%20x%20%5E2%20-%20(%5Cmu%20%5CDelta%20t)%5E2%20%3D%20%5Csigma%5E2%20%5CDelta%20t%5C%5C%0A%20%20%20%20u%20%3D%20%5Cfrac%7B1%7D%7Bd%7D%3De%5E%7B%5CDelta%20x%7D%5C%5C%0A%20%20%20%20p_u%20%2B%20p_d%20%3D%201%5C%5C%0A%20%20%20%20%5Cmu%20%3D%20r-%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%0A%20%20%20%20" alt="
-    p_u u + p_d d = e^{r \Delta t}\\
-    p_u \Delta x^2 + p_d \Delta x ^2 - (\mu \Delta t)^2 = \sigma^2 \Delta t\\
-    u = \frac{1}{d}=e^{\Delta x}\\
-    p_u + p_d = 1\\
-    \mu = r-\frac{\sigma^2}{2}
-    " />
+* Cox-Ross-Rubinstein (CRR) tree:  similar to Trigeogis tree, but different in the first moment  and involves approximation. <img src="https://tex.s2cms.ru/svg/u%20%3D%20e%5E%7B%5Csigma%20%5Csqrt%7B%5CDelta%20t%7D%7D" alt="u = e^{\sigma \sqrt{\Delta t}}" />
+
+  
+<img src="https://tex.s2cms.ru/svg/%0Ap_u%20u%20%2B%20p_d%20d%20%3D%20e%5E%7Br%20%5CDelta%20t%7D%5C%5C%0Ap_u%20%5CDelta%20x%5E2%20%2B%20p_d%20%5CDelta%20x%20%5E2%20-%20(%5Cmu%20%5CDelta%20t)%5E2%20%3D%20%5Csigma%5E2%20%5CDelta%20t%5C%5C%0Au%20%3D%20%5Cfrac%7B1%7D%7Bd%7D%3De%5E%7B%5CDelta%20x%7D%5C%5C%0Ap_u%20%2B%20p_d%20%3D%201%5C%5C%0A%5Cmu%20%3D%20r-%5Cfrac%7B%5Csigma%5E2%7D%7B2%7D%0A" alt="
+p_u u + p_d d = e^{r \Delta t}\\
+p_u \Delta x^2 + p_d \Delta x ^2 - (\mu \Delta t)^2 = \sigma^2 \Delta t\\
+u = \frac{1}{d}=e^{\Delta x}\\
+p_u + p_d = 1\\
+\mu = r-\frac{\sigma^2}{2}
+" />
 
 
 ### Trinomial Trees
